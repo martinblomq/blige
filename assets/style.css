@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,400,700,700i');
+
+body{
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+strong{
+	font-weight:bold;
+}
+
+.top__block--inner {
+	position: relative;
+	overflow:hidden;
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+}
+.loaded .top__block--inner{
+	animation: resizeTop 1.5s ease 2.2s;
+	animation-fill-mode: forwards;
+}
+.top__block--inner:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #212529;
+	z-index: 1;
+	opacity: 0;
+	transition: all 4s ease 2.2s;
+}
+.loaded .top__block--inner:before {
+	opacity:.75;
+}
+.blige-top{
+	opacity:0;
+	transition: all .7s ease 3.6s;
+}
+.loaded .blige-top{
+	opacity:1;
+}
+.carnival-text .first,
+.carnival-text .second{
+	opacity:0;
+	transition: all .8s ease 3.9s;
+}
+.carnival-text .second{
+	transition-delay:4.1s;
+}
+.loaded .carnival-text .first,
+.loaded .carnival-text .second{
+	opacity:1;
+}
+.responsive--video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: none;
+	z-index: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+.z-1{
+	z-index: 1;
+}
+
+@keyframes resizeTop{
+	from{height: 100vh;width: 100vw;}
+	to{height: 90vh;width: 90vw;}
+}
