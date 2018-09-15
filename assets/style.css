@@ -6,6 +6,14 @@ body{
 strong{
 	font-weight:bold;
 }
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+h2{
+	font-weight:bold;
+	text-transform:uppercase;
+}
 
 .top__block--inner {
 	position: relative;
@@ -66,8 +74,41 @@ strong{
 .z-1{
 	z-index: 1;
 }
+.padding-wrapper {
+	padding: 100px 0;
+}
+.big-padding-wrapper{
+	padding:200px 0;
+}
+
 
 @keyframes resizeTop{
 	from{height: 100vh;width: 100vw;}
 	to{height: 90vh;width: 90vw;}
+}
+
+
+.text-shadow {
+	text-shadow: 0 0 50px rgba(0,0,0,.2);
+}
+
+
+.red{
+	color:#d95e4e;
+}
+.yellow{
+	color:#e9a03e;
+}
+.green{
+	color:#7fbfaf;
+}
+.brown{
+	color:#512e38;
+}
+.pink{
+	color:#d4afe2;
+}
+
+.light-bg{
+	background-color:#f5f0e2;
 }
