@@ -6,6 +6,17 @@ $(document).ready(function(){
 	$(document).click(function(){
 		$('.audio')[0].play();
 	})
+
+	$('.previous-blige').slick({
+		slidesToShow:1,
+		slidesToScroll:1,
+		centerMode:true,
+		centerPadding:'20%',
+		arrows:false,
+		dots:true,
+		autoplay:true,
+		autoplaySpeed:3000
+	})
 });
 
 (function($) {
