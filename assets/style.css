@@ -326,3 +326,6 @@ form input::placeholder {
     color: #75726a !important;
     font-weight: 300;
 }
+.hubspot-link__container {
+    display: none !important;
+}
