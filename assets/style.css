@@ -8,8 +8,8 @@ strong{
 	font-weight:bold;
 }
 p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 h2{
 	font-weight:bold;
@@ -19,11 +19,11 @@ section{
 	position:relative;
 }
 .palm--left {
-    position: absolute;
-    top: -16vw;
-    width: 50%;
-    margin-left: -5vw;
-    z-index: -1;
+	position: absolute;
+	top: -16vw;
+	width: 50%;
+	margin-left: -5vw;
+	z-index: -1;
 }
 .palm--left img{
 	width:100%;
@@ -148,14 +148,14 @@ section{
 }
 
 .background {
-    background-size: cover;
-    background-position: center top;
+	background-size: cover;
+	background-position: center top;
 }
 
 .image {
-    width: 150px;
-    height: 150px;
-    margin:auto;
+	width: 150px;
+	height: 150px;
+	margin:auto;
 }
 
 
@@ -163,169 +163,204 @@ section{
 
 
 .come-in {
-  transform: translateY(300%);
-  animation: come-in 1.6s ease forwards;
-  -webkit-animation-delay: .35s;
-  animation-delay: .35s;
+	transform: translateY(300%);
+	animation: come-in 1.6s ease forwards;
+	-webkit-animation-delay: .35s;
+	animation-delay: .35s;
 }
 
 .come-in:nth-child(odd) {
-  animation-duration: 1.4s; /* So they look staggered */
+	animation-duration: 1.4s; /* So they look staggered */
 }
 
 @keyframes come-in {
-  to { transform: translateY(0); }
+	to { transform: translateY(0); }
 }
 
 .hideme
 {
-    opacity:0;
+	opacity:0;
 }
 
 .come-in-scroll {
-    -webkit-transform: translateY(300px);
-    -webkit-animation: come-in 0.8s ease forwards;
-    -moz-transform: translateY();
-    -moz-animation: come-in 0.8s ease forwards;
-    transform: translateY(300px);
-    animation: come-in 0.8s ease forwards;
+	-webkit-transform: translateY(300px);
+	-webkit-animation: come-in 0.8s ease forwards;
+	-moz-transform: translateY();
+	-moz-animation: come-in 0.8s ease forwards;
+	transform: translateY(300px);
+	animation: come-in 0.8s ease forwards;
 }
 
 .fade {
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }
 
 .fade-in {
-    animation: fade-in 2s;
+	animation: fade-in 2s;
 }
 
 @-webkit-keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }         
 @keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 .already-visible {
-    -webkit-transform: translateY(0);
-    -webkit-animation: none;
-    -moz-transform: translateY(0);
-    -moz-animation: none;
-    transform: translateY(0);
-    animation: none;
-    visibility: visible !important;
+	-webkit-transform: translateY(0);
+	-webkit-animation: none;
+	-moz-transform: translateY(0);
+	-moz-animation: none;
+	transform: translateY(0);
+	animation: none;
+	visibility: visible !important;
 }
 
 .module {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 @-webkit-keyframes come-in-scroll {
-    to {
-        -webkit-transform: translateY(0);
-    }
+	to {
+		-webkit-transform: translateY(0);
+	}
 }
 
 @-moz-keyframes come-in-scroll {
-    to {
-        -moz-transform: translateY(0);
-    }
+	to {
+		-moz-transform: translateY(0);
+	}
 }
 
 
 .blige-top img {
-    max-width: 180px;
+	max-width: 180px;
 }
 
 
 
 blockquote {
-    max-width: 300px;
-    margin: auto;
+	max-width: 300px;
+	margin: auto;
 }
 blockquote footer {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: 300;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: 300;
 }
 blockquote p:after {
-    content: '\201c';
-    font-style: normal;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -45px;
-    margin-left: -45px;
-    font-size: 170px;
-    line-height: 1;
-    opacity: .2;
-    color: #d95e4e;
-    z-index: -1;
+	content: '\201c';
+	font-style: normal;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -45px;
+	font-size: 170px;
+	line-height: 1;
+	opacity: .2;
+	color: #d95e4e;
+	z-index: -1;
 }
 blockquote p {
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    position: relative;
-    margin: 0;
-    line-height: 1.3;
+	font-size: 24px;
+	font-weight: bold;
+	font-style: italic;
+	position: relative;
+	margin: 0;
+	line-height: 1.3;
 }
 .tucan {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    margin-top: -20px;
-    margin-left: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	margin-top: -20px;
+	margin-left: 12px;
 }
 
 h1.carnival-text span {
-    position: relative;
+	position: relative;
 }
 
 .logo--block img {
 	max-height: 80px;
 }
 .logo--block .usine img {
-    max-height: 50px;
+	max-height: 50px;
 }
 
 footer p {
-    font-size: 11px;
-    font-weight: 300;
+	font-size: 11px;
+	font-weight: 300;
 }
 
 
 form fieldset {
-    max-width: 100% !important;
+	max-width: 100% !important;
 }
 .form iframe {
-    width: 100% !important;
+	width: 100% !important;
 }
 form label {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 10px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 10px;
 }
 form .hs-input {
-    padding: 7px 0 15px;
-    height: auto;
-    border: 0;
-    border-bottom: 2px solid #aba79c;
-    border-radius: 0;
-    background: transparent;
+	padding: 7px 0 15px;
+	height: auto;
+	border: 0;
+	border-bottom: 2px solid #aba79c;
+	border-radius: 0;
+	background: transparent;
 }
 form input::placeholder {
-    color: #75726a !important;
-    font-weight: 300;
+	color: #75726a !important;
+	font-weight: 300;
 }
 .hubspot-link__container {
-    display: none !important;
+	display: none !important;
+}
+
+
+@media(max-width:757px){
+	h1.carnival-text.display-1 {
+		font-size: 3rem;
+	}
+	.tucan {
+		width: 30px;
+		margin-left: 0;
+		margin-top: -15px;
+	}
+	.padding-wrapper {
+		padding: 60px 0;
+	}
+	.blige-top {
+		display: block !important;
+		margin-bottom: 10px;
+	}
+	@keyframes resizeTop{
+		from{height: 100vh;width: 100vw;}
+		to{height: 75vh;width: calc(100% - 30px);}
+	}
+	.big-padding-wrapper {
+		padding: 60px 0;
+	}
+	.display-3 {
+		font-size: 2.5rem;
+	}
+	h2.display-1 {
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1rem;
+	}
 }
