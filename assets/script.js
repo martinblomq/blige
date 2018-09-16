@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	$('body').addClass('loaded');
+	setTimeout(function(){
+		$(document).click();
+	},100);
+	$(document).click(function(){
+		$('.audio')[0].play();
+	})
 });
 
 (function($) {
