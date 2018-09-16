@@ -330,6 +330,22 @@ form input::placeholder {
 	display: none !important;
 }
 
+.information--wrapper p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.information--wrapper h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+.information--wrapper svg {
+    height: 30px;
+    margin-bottom: 12px;
+}
+
 
 @media(max-width:757px){
 	h1.carnival-text.display-1 {
