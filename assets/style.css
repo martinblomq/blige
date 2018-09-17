@@ -521,6 +521,23 @@ ul.slick-dots {
 }
 
 
+.form:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	left: 0;
+	width: 100%;
+	background: #f5f0e1;
+}
+.form {
+	max-width: 70vw;
+}
+.form {
+	position: relative;
+}
+
+
 @media(max-width:757px){
 	h1.carnival-text.display-1 {
 		font-size: 3rem;
