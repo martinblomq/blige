@@ -33,6 +33,10 @@ section{
 	height: 80%;
 	right: 0;
 	margin-right: -8vw;
+	-webkit-transform: rotate(-50deg);
+	-moz-transform: rotate(-50deg);
+	-ms-transform: rotate(-50deg);
+	-o-transform: rotate(-50deg);
 	transform: rotate(-50deg);
 }
 
@@ -53,7 +57,13 @@ section{
 	margin: auto;
 }
 .loaded .top__block--inner{
+	-webkit-animation: resizeTop 1.5s ease 1.2s;
+	-moz-animation: resizeTop 1.5s ease 1.2s;
+	-o-animation: resizeTop 1.5s ease 1.2s;
 	animation: resizeTop 1.5s ease 1.2s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
 .top__block--inner:before {
@@ -66,6 +76,9 @@ section{
 	background: #212529;
 	z-index: 1;
 	opacity: .4;
+	-webkit-transition: all 3s ease 1.2s;
+	-o-transition: all 3s ease 1.2s;
+	-moz-transition: all 3s ease 1.2s;
 	transition: all 3s ease 1.2s;
 }
 .loaded .top__block--inner:before {
@@ -73,6 +86,9 @@ section{
 }
 .blige-top{
 	opacity:0;
+	-webkit-transition: all .7s ease 1.6s;
+	-o-transition: all .7s ease 1.6s;
+	-moz-transition: all .7s ease 1.6s;
 	transition: all .7s ease 1.6s;
 	font-family: 'Kalam', cursive;
 }
@@ -82,9 +98,15 @@ section{
 .carnival-text .first,
 .carnival-text .second{
 	opacity:0;
+	-webkit-transition: all .8s ease 1.9s;
+	-o-transition: all .8s ease 1.9s;
+	-moz-transition: all .8s ease 1.9s;
 	transition: all .8s ease 1.9s;
 }
 .carnival-text .second{
+	-webkit-transition-delay:2.1s;
+	-moz-transition-delay:2.1s;
+	-o-transition-delay:2.1s;
 	transition-delay:2.1s;
 }
 .loaded .carnival-text .first,
@@ -110,6 +132,24 @@ section{
 }
 .big-padding-wrapper{
 	padding:200px 0;
+}
+
+
+@-webkit-keyframes resizeTop{
+	from{height: 100vh;width: 100vw;}
+	to{height: 90vh;width: 90vw;}
+}
+
+
+@-moz-keyframes resizeTop{
+	from{height: 100vh;width: 100vw;}
+	to{height: 90vh;width: 90vw;}
+}
+
+
+@-o-keyframes resizeTop{
+	from{height: 100vh;width: 100vw;}
+	to{height: 90vh;width: 90vw;}
 }
 
 
@@ -151,6 +191,9 @@ section{
 }
 
 .background {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-position: center top;
 }
@@ -166,18 +209,42 @@ section{
 
 
 .come-in {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	-o-transform: translateY(300%);
 	transform: translateY(300%);
+	-webkit-animation: come-in 1.6s ease forwards;
+	-moz-animation: come-in 1.6s ease forwards;
+	-o-animation: come-in 1.6s ease forwards;
 	animation: come-in 1.6s ease forwards;
 	-webkit-animation-delay: .35s;
+	-moz-animation-delay: .35s;
+	-o-animation-delay: .35s;
 	animation-delay: .35s;
 }
 
 .come-in:nth-child(odd) {
+	-webkit-animation-duration: 1.4s;
+	-moz-animation-duration: 1.4s;
+	-o-animation-duration: 1.4s;
 	animation-duration: 1.4s; /* So they look staggered */
 }
 
+@-webkit-keyframes come-in {
+	to { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@-moz-keyframes come-in {
+	to { -moz-transform: translateY(0); transform: translateY(0); }
+}
+
+@-o-keyframes come-in {
+	to { -o-transform: translateY(0); transform: translateY(0); }
+}
+
 @keyframes come-in {
-	to { transform: translateY(0); }
+	to { -webkit-transform: translateY(0); -moz-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
 }
 
 .hideme
@@ -190,22 +257,38 @@ section{
 	-webkit-animation: come-in 0.8s ease forwards;
 	-moz-transform: translateY();
 	-moz-animation: come-in 0.8s ease forwards;
+	-moz-transform: translateY(300px);
+	-ms-transform: translateY(300px);
+	-o-transform: translateY(300px);
 	transform: translateY(300px);
+	-o-animation: come-in 0.8s ease forwards;
 	animation: come-in 0.8s ease forwards;
 }
 
 .fade {
 	opacity: 1;
+	-o-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 }
 
 .fade-in {
+	-webkit-animation: fade-in 2s;
+	-moz-animation: fade-in 2s;
+	-o-animation: fade-in 2s;
 	animation: fade-in 2s;
 }
 
 @-webkit-keyframes fade-in {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}         
+@-moz-keyframes fade-in {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}         
+@-o-keyframes fade-in {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }         
@@ -219,7 +302,10 @@ section{
 	-webkit-animation: none;
 	-moz-transform: translateY(0);
 	-moz-animation: none;
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
 	transform: translateY(0);
+	-o-animation: none;
 	animation: none;
 	visibility: visible !important;
 }
@@ -305,21 +391,23 @@ footer p {
 }
 
 .sound svg {
-    width: 30px;
-    height: 30px;
+	width: 30px;
+	height: 30px;
 }
 
 .sound {
-    position: absolute;
-    top: 0;
-    z-index: 9;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    padding: 10px;
-    background: rgba(255,255,255,.15);
-    border-radius: 100%;
-    cursor:pointer;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	right: 0;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	background: rgba(255,255,255,.15);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	cursor:pointer;
 }
 
 
@@ -340,8 +428,30 @@ form .hs-input {
 	height: auto;
 	border: 0;
 	border-bottom: 2px solid #aba79c;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 	border-radius: 0;
 	background: transparent;
+}
+form input::-webkit-input-placeholder {
+	color: #75726a !important;
+	font-weight: 300;
+}
+form input:-moz-placeholder {
+	color: #75726a !important;
+	font-weight: 300;
+}
+form input::-moz-placeholder {
+	color: #75726a !important;
+	font-weight: 300;
+}
+form input:-ms-input-placeholder {
+	color: #75726a !important;
+	font-weight: 300;
+}
+form input::-ms-input-placeholder {
+	color: #75726a !important;
+	font-weight: 300;
 }
 form input::placeholder {
 	color: #75726a !important;
@@ -369,6 +479,9 @@ form input::placeholder {
 
 .blige-photo__block {
 	height: 25vw;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-position: top center;
 	width: 100%;
@@ -390,9 +503,14 @@ ul.slick-dots li button {
 	background: #7fbfaf;
 	width: 20px;
 	height: 20px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 	margin: 0;
 	padding: 0;
+	-webkit-transition: all .15s ease;
+	-o-transition: all .15s ease;
+	-moz-transition: all .15s ease;
 	transition: all .15s ease;
 	opacity: .3;
 }
@@ -419,9 +537,21 @@ ul.slick-dots {
 		display: block !important;
 		margin-bottom: 10px;
 	}
-	@keyframes resizeTop{
+	@-webkit-keyframes resizeTop{
+		from{height: 100vh;width: 100vw;}
+		to{height: 75vh;width: -webkit-calc(100% - 30px);width: calc(100% - 30px);}
+	}
+	@-moz-keyframes resizeTop{
+		from{height: 100vh;width: 100vw;}
+		to{height: 75vh;width: -moz-calc(100% - 30px);width: calc(100% - 30px);}
+	}
+	@-o-keyframes resizeTop{
 		from{height: 100vh;width: 100vw;}
 		to{height: 75vh;width: calc(100% - 30px);}
+	}
+	@keyframes resizeTop{
+		from{height: 100vh;width: 100vw;}
+		to{height: 75vh;width: -webkit-calc(100% - 30px);width: -moz-calc(100% - 30px);width: calc(100% - 30px);}
 	}
 	.big-padding-wrapper {
 		padding: 60px 0;
