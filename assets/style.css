@@ -524,6 +524,10 @@ ul.slick-dots {
 	font-weight: 300;
 }
 
+.form iframe {
+	max-width: 100% !important;
+}
+
 
 .form:after {
 	content: '';
