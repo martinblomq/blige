@@ -8,14 +8,23 @@ $(document).ready(function(){
 	})
 
 	$('.previous-blige').slick({
-		slidesToShow:1,
+		slidesToShow:3,
 		slidesToScroll:1,
 		centerMode:true,
-		centerPadding:'20%',
+		centerPadding:'2%',
 		arrows:false,
 		dots:true,
 		autoplay:true,
-		autoplaySpeed:3000
+		autoplaySpeed:3000,
+		responsive: [
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				centerPadding:'5%'
+			}
+		}
+		]
 	})
 });
 
