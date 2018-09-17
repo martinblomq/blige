@@ -53,7 +53,7 @@ section{
 	margin: auto;
 }
 .loaded .top__block--inner{
-	animation: resizeTop 1.5s ease 2.2s;
+	animation: resizeTop 1.5s ease 1.2s;
 	animation-fill-mode: forwards;
 }
 .top__block--inner:before {
@@ -65,15 +65,15 @@ section{
 	height: 100%;
 	background: #212529;
 	z-index: 1;
-	opacity: 0;
-	transition: all 4s ease 2.2s;
+	opacity: .4;
+	transition: all 3s ease 1.2s;
 }
 .loaded .top__block--inner:before {
-	opacity:.75;
+	opacity:.9;
 }
 .blige-top{
 	opacity:0;
-	transition: all .7s ease 3.6s;
+	transition: all .7s ease 1.6s;
 	font-family: 'Kalam', cursive;
 }
 .loaded .blige-top{
@@ -82,10 +82,10 @@ section{
 .carnival-text .first,
 .carnival-text .second{
 	opacity:0;
-	transition: all .8s ease 3.9s;
+	transition: all .8s ease 1.9s;
 }
 .carnival-text .second{
-	transition-delay:4.1s;
+	transition-delay:2.1s;
 }
 .loaded .carnival-text .first,
 .loaded .carnival-text .second{
