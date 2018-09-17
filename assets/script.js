@@ -3,7 +3,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$(document).click();
 	},100);
-	$(document).click(function(){
+	$('.sound').click(function(){
 		$('.audio')[0].play();
 	})
 
