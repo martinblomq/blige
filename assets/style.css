@@ -609,4 +609,7 @@ ul.slick-dots {
 	.blige-photo__block {
 		height: 65vw;
 	}
+	#rvsp{
+		width:100vw;
+	}
 }
