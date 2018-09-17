@@ -520,6 +520,10 @@ ul.slick-dots {
 	margin: 30px 0 0;
 }
 
+.info--block small {
+	font-weight: 300;
+}
+
 
 .form:after {
 	content: '';
