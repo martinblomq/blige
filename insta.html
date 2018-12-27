@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insta yo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/node_modules/slick_181/slick/slick.css">
+	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+</head>
+<body>
+	<main>
+		<section class="padding-wrapper">
+			<div class="container">
+				<h1>Insta!</h1>
+				<form enctype="multipart/form-data" action="uploader.php" method="POST">
+					<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+					<input type="file" accept="image/*;capture=camera">
+					<input type="submit" value="Ladda upp" />
+				</form>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
